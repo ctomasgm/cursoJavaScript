@@ -1,0 +1,23 @@
+{
+  "name": "actividades-paradigmas-prog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ctomasgm/Actividades-Paradigmas-Prog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ctomasgm/Actividades-Paradigmas-Prog/issues"
+  },
+  "homepage": "https://github.com/ctomasgm/Actividades-Paradigmas-Prog#readme",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "johnny-five": "^1.4.0"
+  }
+}
