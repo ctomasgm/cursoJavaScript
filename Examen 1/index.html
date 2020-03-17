@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: rgba(128, 1, 29, 0.1);
+            padding: 5px;
+        }
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgb(155, 114, 108);
+            padding: 0px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body background="background.jpg">
+
+    <h1>Welcome to Carlos' Tavern</h1>
+    <h2>Get fun <em>playing</em>, choose one.</h2>
+    <h3>$50 per hour</h3>
+
+    <div class="grid-container">
+        <div class="grid-item" onclick="changeImage('1')">
+            <img src="tableOff.png" id="tab1" width="250" height="120">
+            <p id="strTimeT1"></p>Start Time
+            <p id="endTimeT1"></p>End Time
+        </div>
+        <div class="grid-item" onclick="changeImage('2')">
+            <img src="tableOff.png" id="tab2" width="250" height="120">
+            <p id="strTimeT2"></p>Start Time
+            <p id="endTimeT2"></p>End Time
+        </div>
+        <div class="grid-item" onclick="changeImage('3')">
+            <img src="tableOff.png" id="tab3" width="250" height="120">
+            <p id="strTimeT3"></p>Start Time
+            <p id="endTimeT3"></p>End Time
+        </div>
+        <div class="grid-item" onclick="changeImage('4')">
+            <img src="tableOff.png" id="tab4" width="250" height="120">
+            <p id="strTimeT4"></p>Start Time
+            <p id="endTimeT4"></p>End Time
+        </div>
+        <div class="grid-item" onclick="changeImage('5')">
+            <img src="tableOff.png" id="tab5" width="250" height="120">
+            <p id="strTimeT5"></p>Start Time
+            <p id="endTimeT5"></p>End Time
+        </div>
+        <div class="grid-item" onclick="changeImage('6')">
+            <img src="tableOff.png" id="tab6" width="250" height="120">
+            <p id="strTimeT6"></p>Start Time
+            <p id="endTimeT6"></p>End Time
+        </div>
+    </div>
+
+</body>
+<script src="script.js"> </script>
+
+</html>
