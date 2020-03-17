@@ -6,5 +6,5 @@ const hacerTarea = (tarea,callback) => {
 }
 
 hacerTarea("Derecho Informatico",()=>{
-  console.log("Salir de antro");
+  console.log("Jugar lolsito<3");
 })
