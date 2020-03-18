@@ -26,7 +26,7 @@ const getPrice = (num) => {
     let strTime = getDate(document.getElementById(`strTimeT${num}`).innerHTML);
     let endTime = getDate(document.getElementById(`endTimeT${num}`).innerHTML);
     let difSec = ((endTime.getTime() - strTime.getTime()) / 1000);
-    return difSec * pricePerSecond;
+    return (difSec * pricePerSecond).toFixed(2);
 }
 
 const getDate = (time) => {
