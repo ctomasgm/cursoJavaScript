@@ -7,57 +7,88 @@
             display: grid;
             grid-template-columns: auto auto auto;
             background-color: rgba(128, 1, 29, 0.1);
-            padding: 5px;
+            padding: 10px;
         }
+
         .grid-item {
             background-color: rgba(255, 255, 255, 0.2);
-            border: 1px solid rgb(155, 114, 108);
-            padding: 0px;
+            border: 2px solid rgb(155, 114, 108);
+            padding: 30px;
             font-size: 30px;
             text-align: center;
         }
     </style>
 </head>
+<title>Examen 1er parcial</title>
 
 <body background="background.jpg">
 
     <h1>Welcome to Carlos' Tavern</h1>
-    <h2>Get fun <em>playing</em>, choose one.</h2>
-    <h3>$50 per hour</h3>
+    <h2>Get fun <em>playing</em>, choose one. - $50 per hour</h2>
 
     <div class="grid-container">
-        <div class="grid-item" onclick="changeImage('1')">
+        <div class="grid-item" onclick="changeImage('1')">Mesa 1<br>
             <img src="tableOff.png" id="tab1" width="250" height="120">
-            <p id="strTimeT1"></p>Start Time
-            <p id="endTimeT1"></p>End Time
+            <p>
+                Start Time: <label id="strTimeT1"></label>
+                <br>
+                End Time: <label id="endTimeT1"></label>
+                <br>
+                Price: <label id="priceT1">-</label>
+            </p>
         </div>
-        <div class="grid-item" onclick="changeImage('2')">
+        <div class="grid-item" onclick="changeImage('2')">Mesa 2<br>
             <img src="tableOff.png" id="tab2" width="250" height="120">
-            <p id="strTimeT2"></p>Start Time
-            <p id="endTimeT2"></p>End Time
+            <p>
+                Start Time: <label id="strTimeT2"></label>
+                <br>
+                End Time: <label id="endTimeT2"></label>
+                <br>
+                Price: <label id="priceT2">-</label>
+            </p>
         </div>
-        <div class="grid-item" onclick="changeImage('3')">
+        <div class="grid-item" onclick="changeImage('3')">Mesa 3<br>
             <img src="tableOff.png" id="tab3" width="250" height="120">
-            <p id="strTimeT3"></p>Start Time
-            <p id="endTimeT3"></p>End Time
+            <p>
+                Start Time: <label id="strTimeT3"></label>
+                <br>
+                End Time: <label id="endTimeT3"></label>
+                <br>
+                Price: <label id="priceT3">-</label>
+            </p>
         </div>
-        <div class="grid-item" onclick="changeImage('4')">
+        <div class="grid-item" onclick="changeImage('4')">Mesa 4<br>
             <img src="tableOff.png" id="tab4" width="250" height="120">
-            <p id="strTimeT4"></p>Start Time
-            <p id="endTimeT4"></p>End Time
+            <p>
+                Start Time: <label id="strTimeT4"></label>
+                <br>
+                End Time: <label id="endTimeT4"></label>
+                <br>
+                Price: <label id="priceT4">-</label>
+            </p>
         </div>
-        <div class="grid-item" onclick="changeImage('5')">
+        <div class="grid-item" onclick="changeImage('5')">Mesa 5<br>
             <img src="tableOff.png" id="tab5" width="250" height="120">
-            <p id="strTimeT5"></p>Start Time
-            <p id="endTimeT5"></p>End Time
+            <p>
+                Start Time: <label id="strTimeT5"></label>
+                <br>
+                End Time: <label id="endTimeT5"></label>
+                <br>
+                Price: <label id="priceT5">-</label>
+            </p>
         </div>
-        <div class="grid-item" onclick="changeImage('6')">
+        <div class="grid-item" onclick="changeImage('6')">Mesa 6<br>
             <img src="tableOff.png" id="tab6" width="250" height="120">
-            <p id="strTimeT6"></p>Start Time
-            <p id="endTimeT6"></p>End Time
+            <p>
+                Start Time: <label id="strTimeT6"></label>
+                <br>
+                End Time: <label id="endTimeT6"></label>
+                <br>
+                Price: <label id="priceT6">-</label>
+            </p>
         </div>
     </div>
-
+    <h2>Carlos Tomas Garcia Martinez <br>320605</h3>
 </body>
 <script src="script.js"> </script>
 
