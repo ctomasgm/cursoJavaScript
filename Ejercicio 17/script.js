@@ -1,16 +1,40 @@
-const checkAge = (age) => {
-return new Promise((resolve,reject) => {
-  (age >=18) ? resolve(`He/She have a legal age with ${age} years old`)
-  : resolve(`He/She doesn't have a legal age, has  ${age} years old`);
+const paypal = new Promise((resolve,reject) => {
+  setTimeout(() => {
+    resolve("Paypal")
+  },3000)
 })
+
+const tarjeta = new Promise((resolve,reject) => {
+  setTimeout(() => {
+    resolve("Tarjeta")
+  },5000)
+})
+
+const pagarComida = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    Promise.race([paypal,tarjeta]).then(proveedorPago =>{
+      resolve(resolve({done:true, proveedorPago, clienteId:45613}))
+    })
+  },3000)
+})
+
+const enviarComida = new Promise((resolve,reject) => {
+  setTimeout(()=>{
+    //reject("Problema con el repartidor")
+    resolve({repartidorId:4561,distancia:10})
+  },10000)
+})
+
+const pedirComida = async () => {
+  const comida = await Promise.all([pagarComida,enviarComida])
+    return comida
+
 }
 
-
-const print = (age) => {
-  checkAge(age)
-  .then(message => console.log(message))
-  .catch(error => console.error(error))
-  .finally(() => console.log("End of the process"))
-  }
-
-print(18)
+pedirComida()
+  .then(orden => {
+    console.log(orden)
+  })
+  .catch(error => {
+    console.error(error)
+  })
