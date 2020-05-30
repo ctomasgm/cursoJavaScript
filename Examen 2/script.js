@@ -8,7 +8,7 @@ const loadPage = () => {
   const url = `http://gateway.marvel.com/v1/public/characters?limit=50&offset=${offset}&ts=${ts}&apikey=${apyKey}&hash=${hash}`
   fetch(url).then(response => response.json())
     .then(characters => {
-      const lista = characters.data.results.map(character =>
+      characters.data.results.map(character =>
         `<a href="detalle.html?id=${character.id}&ts=${ts}&apikey=${apyKey}&hash=${hash}" class="list-group-item list-group-item-action" style="border-radius: 10px; margin:5px; background-color: rgba(255,255,255,0.99)">
         <h6 style="margin-left:5px" >${character.name} - ${character.id}</h6>
         <p style="margin-left:10px">${character.description || "No description"}</p> 

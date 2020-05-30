@@ -6,7 +6,7 @@ const apyKey = 'b31d2910c247b1ac801419d534c6c74e'
 const hash = '8a181f07de9f02929051ceafcdfab96a'
 
 const url = `http://gateway.marvel.com/v1/public/characters/${id}?&ts=${ts}&apikey=${apyKey}&hash=${hash}`
-fetch(url).then(response =>response.json())
+fetch(url).then(response => response.json())
     .then(info=> {
         console.log(info.data.results[0])
         info = info.data.results[0]
