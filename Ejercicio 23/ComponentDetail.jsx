@@ -27,34 +27,37 @@ const ComponentDetail = () => {
         setImg(`${postDetail.data.results[0].thumbnail.path}.${postDetail.data.results[0].thumbnail.extension}`)
 
         console.log(img)
-
+        
     }
-
+    
     return (
-        <div className="jumbotron">
-            <img src={img} className="rounded mx-auto d-block"/>
-                <h1 className="display-4">{name}</h1>
-                <p className="lead">{description}</p>
-              
-                <table className="table">
-                    <thead>
-                        <tr>
-                            <th>Comics</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {
-                            comics.map(comic => (
-                                <tr>
-                                    <td>
-                                        {comic.name}
-                                    </td>
-                                </tr>
-                            ))
-                        }
-                    </tbody>
-                </table>
-            </div>
+        <div>
+            <img src = {img}/>
+            <h1>Character detail</h1>
+            <hr />
+            <h2>{name}</h2>
+            <br />
+            <p>{description}</p>
+            <br />
+            <table className="table">
+                <thead>
+                    <tr>
+                        <th>Comics</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                        comics.map(comic => (
+                            <tr>
+                                <td>
+                                    {comic.name}
+                                </td>
+                            </tr>
+                        ))
+                    }
+                </tbody>
+            </table>
+        </div>
     )
 }
 
